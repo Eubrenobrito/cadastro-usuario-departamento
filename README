@@ -1,0 +1,31 @@
+
+
+maven é o gerenciador de dependencias
+dependencias:
+spring web
+spring data jpa
+banco de dados em mémoria: h2
+
+**depois de criadas as entidades
+mapeamento objeto relacional:
+informar como que os objetos do java serão convertidos para um modelo relacional no banco de dados relacional.
+
+tb_departamento:                         tb_usuario             (aqui é a chave estrangeira)
+id | name                                id | name | email  | departamento_id
+1  | informática			             1  | Maria| @gmail | 	1
+
+um departamento podem ter vários usuários, mas o usuário só poderá ter 1 departamento.
+
+
+
+*------------------------------------------------------//--------------------------------------------------*
+* Eco sistema Spring Framework: Spring Boot, Spring Data JPA etc...
+
+* A API de Persistência do Java (JPA - Java Persistence API) é uma especificação
+de como o Mapeamento Objeto-Relacional (ORM - Object-Relational Mapping) deve
+ser implementado na plataforma JavaEE.
+
+Portanto:
+ORM é um conceito geral
+JPA define um padrão de ORM, ou seja, como isso deve funcionar em Java na prática
+Hibernate, EclipseLink, Toplink, OpenJPA são implementações do padrão JPA
